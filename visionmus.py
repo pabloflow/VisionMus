@@ -7,7 +7,7 @@ def read_image_templates(image, folder):
     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
 
     x1, y1 =   245, 120     #superior izq    215, 102 para wasap 
-    x2, y2 =   420, 220     #inferior der    330, 150 para wasap
+    x2, y2 =   385, 175     #inferior der    330, 150 para wasap
     roi = img_gray[y1:y2, x1:x2]
     cv2.imshow('recorte', roi)
     print("Presiona una tecla en la ventana de la imagen para continuar...")
