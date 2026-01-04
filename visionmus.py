@@ -6,8 +6,8 @@ def read_image_templates(image, folder):
     img_rgb = cv2.imread(image)
     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
 
-    x1, y1 = 215, 102  # superior izq
-    x2, y2 = 330, 150  # inferior der
+    x1, y1 =   245, 120     #superior izq    215, 102 para wasap 
+    x2, y2 =   420, 220     #inferior der    330, 150 para wasap
     roi = img_gray[y1:y2, x1:x2]
     cv2.imshow('recorte', roi)
     print("Presiona una tecla en la ventana de la imagen para continuar...")
@@ -19,7 +19,6 @@ def read_image_templates(image, folder):
         name_template = f"{folder}/{i}.png"
         template = cv2.imread(name_template, 0)
         if template is None: continue
-        w, h = template.shape[::-1]
         res = cv2.matchTemplate(roi, template, cv2.TM_CCOEFF_NORMED)
         threshold = 0.75
         loc = np.where(res >= threshold)
@@ -39,5 +38,5 @@ def read_image_templates(image, folder):
 
     return "".join(resultado_final)
 
-img = "WhatsApp Image 2026-01-03 at 15.45.44 (4).jpeg"
+img = "capturastodas/Screenshot_20251219-195020_Mus Maestro.png"
 print(read_image_templates(img, "plantillasmarcador"))
