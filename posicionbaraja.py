@@ -35,12 +35,12 @@ def deckposition(imagepath, rois):
     else:
         result = "No se detectó la baraja"
     
-    scale = 0.5  # Reduce la ventana de visualizacion de las zonas
-    img_redimensionada = cv2.resize(img, (int(img.shape[1] * scale), int(img.shape[0] * scale)))
+    #scale = 0.5  # Reduce la ventana de visualizacion de las zonas
+    #img_redimensionada = cv2.resize(img, (int(img.shape[1] * scale), int(img.shape[0] * scale)))
     
-    cv2.imshow("Deteccion Baraja", img_redimensionada)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    #cv2.imshow("Deteccion Baraja", img_redimensionada)
+    #cv2.waitKey(0)
+    #cv2.destroyAllWindows()
     
     return result
 
