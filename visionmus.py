@@ -35,19 +35,19 @@ def read_image_templates(image, folder):
     # Marcador 1 
     x1_eq1, y1_eq1 = 245, 120   # esquina superior izquierda
     x2_eq1, y2_eq1 = 385, 175   # esquina inferior derecha
-    roi_eq1 = img_gray[y1_eq1:y2_eq1, x1_eq1:x2_eq1]
+    roi_eq1 = img_gray[y1_eq1:y2_eq1, x1_eq1:x2_eq1]#
 
     # Marcador 2 
     x1_eq2, y1_eq2 = 920, 120   
     x2_eq2, y2_eq2 = 1060, 175   
     roi_eq2 = img_gray[y1_eq2:y2_eq2, x1_eq2:x2_eq2]
 
-    # Mostrar los ROIs mientras haces pruebas
-    cv2.imshow('ROI Equipo 1', roi_eq1)
-    cv2.imshow('ROI Equipo 2', roi_eq2)
-    print("Presiona una tecla para continuar...")
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # Mostrar los ROIs pruebas
+    #cv2.imshow('ROI Equipo 1', roi_eq1)
+    #cv2.imshow('ROI Equipo 2', roi_eq2)
+    #print("Presiona una tecla para continuar...")
+    #cv2.waitKey(0)
+    #cv2.destroyAllWindows()
 
     # Procesar ambos ROIs
     puntuacion_eq1 = detect_numbers_in_roi(roi_eq1, folder, threshold=0.75)
