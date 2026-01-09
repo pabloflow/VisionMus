@@ -36,8 +36,8 @@ def leer_mano(image_path):
 
     return numbers_det
 
-ruta_imagen = "capturastodas/capturamas2.png"
-result = leer_mano(ruta_imagen)
-print("Mano detectada:", result)
+# ruta_imagen = "capturastodas/capturamas2.png"
+# result = leer_mano(ruta_imagen)
+# print("Mano detectada:", result)
 
 

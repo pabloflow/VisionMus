@@ -51,4 +51,4 @@ rois = [
         (915, 1403, 50, 50),       
 ]
 
-print("La mano la tiene:", deckposition("capturastodas/mano1.png", rois))
+# print("La mano la tiene:", deckposition("capturastodas/mano1.png", rois))

@@ -55,7 +55,7 @@ def read_image_templates(image, folder):
 
     return puntuacion_eq1, puntuacion_eq2
 
-img = "capturastodas/Screenshot_20251219-195020_Mus Maestro.png"
-eq1, eq2 = read_image_templates(img, "plantillasmarcador")
-print(f"Equipo 1: {eq1}")
-print(f"Equipo 2: {eq2}")
+# img = "capturastodas/Screenshot_20251219-195020_Mus Maestro.png"
+# eq1, eq2 = read_image_templates(img, "plantillasmarcador")
+# print(f"Equipo 1: {eq1}")
+# print(f"Equipo 2: {eq2}")
