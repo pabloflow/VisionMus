@@ -44,11 +44,11 @@ def deckposition(imagepath, rois):
     
     return result
 
-rois = [
-        (100, 1391, 50, 50),
-        (100, 628, 50, 50),
-        (925, 609, 50, 50),
-        (915, 1403, 50, 50),       
-]
+# rois = [
+#         (100, 1391, 50, 50),
+#         (100, 628, 50, 50),
+#         (925, 609, 50, 50),
+#         (915, 1403, 50, 50),       
+# ]
 
 # print("La mano la tiene:", deckposition("capturastodas/mano1.png", rois))
