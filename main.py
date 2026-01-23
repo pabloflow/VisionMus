@@ -1,4 +1,4 @@
-from visionmus import read_image_templates
+from marcadores import read_image_templates
 from ocr_cartas import leer_mano
 from posicionbaraja import deckposition
 
@@ -49,4 +49,4 @@ def analizar_imagen(image_path):
 
 if __name__ == "__main__":
    
-    resultado = analizar_imagen("capturastodas/capturamas2.png")
+    resultado = analizar_imagen("ultimas/cap26.png")
