@@ -10,10 +10,10 @@ def leer_mano(image_path):
         return []
     
     ROIS = [
-        (167, 1535, 50, 55),  
-        (355, 1510, 50, 55),  
-        (531, 1510, 50, 55),  
-        (712, 1509, 50, 55)   
+        (167, 1535, 50, 47),  
+        (355, 1510, 50, 47),  
+        (531, 1510, 50, 47),  
+        (712, 1515, 50, 47)   
     ]
     numbers_det = []
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -29,7 +29,7 @@ def leer_mano(image_path):
             number = "?"
         numbers_det.append(number)
     # debug
-        #cv2.imshow(f"Carta {i+1}", thresh)
+    #    cv2.imshow(f"Carta {i+1}", thresh)
 
     #cv2.waitKey(0) 
     #cv2.destroyAllWindows()
